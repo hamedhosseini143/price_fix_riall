@@ -1,7 +1,8 @@
 name: 'Price Fix Riall'
 type: module
-description: 'My Awesome Module'
+description: 'Price Fix Riall'
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Custom'
 dependencies:
   - commerce
