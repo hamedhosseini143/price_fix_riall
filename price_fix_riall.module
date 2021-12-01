@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains price_fix_riall.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function price_fix_riall_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the price_fix_riall module.
+    case 'help.page.price_fix_riall':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function price_fix_riall_theme()
+{
+  return [
+    'price_fix_riall' => [
+      'variables' => [
+        'number' => 0,
+        'currency' => NULL,
+        'toman' => NULL
+      ],
+    ],
+  ];
+}

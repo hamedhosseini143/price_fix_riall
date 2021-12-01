@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for displaying a price.
+ *
+ * Used by the 'price_fix_riall' formatter.
+ * Available variables:
+ *   - number: The number.
+ *   - currency: The currency entity.
+ *   - toman : Use of tumans
+ *
+ * @ingroup themeable
+ */
+#}
+<span>
+  {{ number|number_format(0, '.', ',') }}
+{% if (toman) %}
+  تومان
+{% else %}
+  ریال
+{% endif %}
+</span>

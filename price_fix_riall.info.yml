@@ -1,0 +1,9 @@
+name: 'Price Fix Riall'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - commerce
+  - commerce_cart
+  - commerce_price
